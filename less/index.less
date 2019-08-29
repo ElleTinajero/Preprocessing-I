@@ -50,22 +50,33 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+
 }
 
-html, body {
-	height: 100%;
+body {
+	border:1px solid @Holloween;
+	width:1000px;
+	height:1600px;
 }
+
+
+
 
 @Holloween:#F2995F;
 .fontstuff {
 	color:#363636;
 	font-family:'Open Sans Condensed', sans-serif;
-
 }
 
 .flexbox {
 	display:flex;
+}
+
+.subheaders {
+	text-decoration:underline;
+	text-decoration-color:@Holloween;
+	text-align:center;
 }
 
 header {
@@ -114,16 +125,14 @@ a:hover {
 
 .firstSection {
 	.flexbox;
-	
+
 	div {
 		.fontstuff;
 		width:500px;
 		margin-left:50px;
 
 		h2 {
-			text-decoration:underline;
-			text-decoration-color:@Holloween;
-			text-align:center;
+			.subheaders;
 		}
 
 		p {
@@ -134,12 +143,13 @@ a:hover {
 
 	ul {
 		.fontstuff;
-		width:200px;
+		width:380px;
+		border:1px solid @Holloween;
+		padding:10px;
+		margin:20px;
 		
 		h2 {
-			text-decoration:underline;
-			text-decoration-color:@Holloween;
-			text-align:center;	
+			.subheaders;	
 				
 		}
 
@@ -150,5 +160,48 @@ a:hover {
 			font-size:20px;
 		}
 	}
+}
 
+
+.secondSection {
+	.flexbox;
+	.fontstuff;
+	width:1000px;
+	padding:10px;
+
+	.genContainer {
+		width:600px;
+		border:1px solid @Holloween;
+		margin:20px 20px 20px 60px;
+
+		li {
+			list-style-type:circle;
+			font-size:20px;
+		}
+
+		h2 {
+			.subheaders;
+		}
+	}
+
+	.genContainerTwo {
+		width:500px;
+		margin-right:70px;
+		li {
+			text-align:left;
+			margin-left:100px;
+			list-style-type:circle;
+			font-size:20px;
+		}
+
+		h2 {
+			.subheaders;
+		}
+	}
+}
+
+img {
+	border:1px solid @Holloween;
+	width:850px;
+	margin-left:75px;
 }

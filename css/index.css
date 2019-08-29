@@ -62,9 +62,10 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
 body {
-  height: 100%;
+  border: 1px solid #F2995F;
+  width: 1000px;
+  height: 1600px;
 }
 .fontstuff {
   color: #363636;
@@ -72,6 +73,11 @@ body {
 }
 .flexbox {
   display: flex;
+}
+.subheaders {
+  text-decoration: underline;
+  text-decoration-color: #F2995F;
+  text-align: center;
 }
 header {
   width: 1000px;
@@ -135,7 +141,10 @@ a:hover {
 .firstSection ul {
   color: #363636;
   font-family: 'Open Sans Condensed', sans-serif;
-  width: 200px;
+  width: 380px;
+  border: 1px solid #F2995F;
+  padding: 10px;
+  margin: 20px;
 }
 .firstSection ul h2 {
   text-decoration: underline;
@@ -147,4 +156,45 @@ a:hover {
   margin-left: 100px;
   list-style-type: circle;
   font-size: 20px;
+}
+.secondSection {
+  display: flex;
+  color: #363636;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 1000px;
+  padding: 10px;
+}
+.secondSection .genContainer {
+  width: 600px;
+  border: 1px solid #F2995F;
+  margin: 20px 20px 20px 60px;
+}
+.secondSection .genContainer li {
+  list-style-type: circle;
+  font-size: 20px;
+}
+.secondSection .genContainer h2 {
+  text-decoration: underline;
+  text-decoration-color: #F2995F;
+  text-align: center;
+}
+.secondSection .genContainerTwo {
+  width: 500px;
+  margin-right: 70px;
+}
+.secondSection .genContainerTwo li {
+  text-align: left;
+  margin-left: 100px;
+  list-style-type: circle;
+  font-size: 20px;
+}
+.secondSection .genContainerTwo h2 {
+  text-decoration: underline;
+  text-decoration-color: #F2995F;
+  text-align: center;
+}
+img {
+  border: 1px solid #F2995F;
+  width: 850px;
+  margin-left: 75px;
 }
