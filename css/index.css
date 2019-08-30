@@ -67,6 +67,11 @@ body {
   width: 1000px;
   height: 1600px;
 }
+@media (max-width: 500px) {
+  body {
+    border: none;
+  }
+}
 .fontstuff {
   color: #363636;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -83,18 +88,29 @@ header {
   width: 1000px;
 }
 header h1 {
+  color: #363636;
+  font-family: 'Open Sans Condensed', sans-serif;
   border: 3px solid #363636;
   padding: 50px;
   margin: 20px 20px 20px 50px;
   width: 900px;
   text-align: center;
-  font-size: 4em;
-  color: #363636;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 60px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    width: 450px;
+    margin: 20px 20px 20px 10px;
+  }
 }
 header nav {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -105,6 +121,12 @@ header nav a {
   padding: 15px;
   margin: 10px;
   border-radius: 20px;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 450px;
+    text-align: center;
+  }
 }
 header p {
   color: #363636;
@@ -117,17 +139,36 @@ header p {
   border-radius: 20px;
   font-size: 25px;
 }
+@media (max-width: 500px) {
+  header p {
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    margin: -45px 0px 0px 85px;
+  }
+}
 a:hover {
   color: white;
 }
 .firstSection {
   display: flex;
 }
+@media (max-width: 500px) {
+  .firstSection {
+    flex-direction: column;
+  }
+}
 .firstSection div {
   color: #363636;
   font-family: 'Open Sans Condensed', sans-serif;
   width: 500px;
   margin-left: 50px;
+}
+@media (max-width: 500px) {
+  .firstSection div {
+    margin: 10px;
+    width: 450px;
+  }
 }
 .firstSection div h2 {
   text-decoration: underline;
@@ -146,6 +187,12 @@ a:hover {
   padding: 10px;
   margin: 20px;
 }
+@media (max-width: 500px) {
+  .firstSection ul {
+    width: 450px;
+    margin: 10px;
+  }
+}
 .firstSection ul h2 {
   text-decoration: underline;
   text-decoration-color: #F2995F;
@@ -157,17 +204,33 @@ a:hover {
   list-style-type: circle;
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  .firstSection ul li {
+    margin: 0px;
+    margin-left: 30px;
+  }
+}
 .secondSection {
   display: flex;
   color: #363636;
   font-family: 'Open Sans Condensed', sans-serif;
-  width: 1000px;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .secondSection {
+    flex-direction: column;
+  }
 }
 .secondSection .genContainer {
   width: 600px;
   border: 1px solid #F2995F;
   margin: 20px 20px 20px 60px;
+}
+@media (max-width: 500px) {
+  .secondSection .genContainer {
+    width: 450px;
+    margin: 0px;
+  }
 }
 .secondSection .genContainer li {
   list-style-type: circle;
@@ -182,11 +245,22 @@ a:hover {
   width: 500px;
   margin-right: 70px;
 }
+@media (max-width: 500px) {
+  .secondSection .genContainerTwo {
+    width: 450px;
+    margin-right: 10px;
+  }
+}
 .secondSection .genContainerTwo li {
   text-align: left;
   margin-left: 100px;
   list-style-type: circle;
   font-size: 20px;
+}
+@media (max-width: 500px) {
+  .secondSection .genContainerTwo li {
+    margin: 0px;
+  }
 }
 .secondSection .genContainerTwo h2 {
   text-decoration: underline;
@@ -197,4 +271,10 @@ img {
   border: 1px solid #F2995F;
   width: 850px;
   margin-left: 75px;
+}
+@media (max-width: 500px) {
+  img {
+    width: 450px;
+    margin: 10px;
+  }
 }
